@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="/public/styles.css">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Verson</title>
+
+
+</head>
+
+<body onload="Initializer('{{theVerses}}', '{{verseNumber}}', '{{surahs_info}}')">
+
+
+
+
+
+
+	<div class="bg">
+
+
+
+
+		<div style="text-align: center;  display:inline-flexbox;">
+			<p id="next" class="btn"><span class="material-icons">chevron_left</span></p>
+			<h1 id="verse" style="font-weight: bold;">{{content}}</h1>
+			<p id="previous" class="btn"><span class="material-icons">navigate_next</span></p>
+		</div>
+
+
+	
+		<div id="fire" class="pyro" style="position:fixed; right:50%; display: none;">
+			<div class="before"></div>
+			<div class="after"></div>
+		</div>
+
+
+		<div id="test">
+
+			<h2 style="position: fixed; top:1%; right: 2%; color:rgb(16, 253, 36)">Score: <span id="score">0</span></h2>
+
+			<div id="random-wrapper"
+				style="top: 62%; ;">
+
+				<input type="text" name="" id="answer" dir="rtl" placeholder="ما السورة؟">
+				<button id="nButton">submit</button>
+
+			</div>
+
+		</div>
+
+	<div id="random-wrapper">
+		
+		<button id="random" class="button">Random</button>
+			
+		<p id="guess" style="background:rgb(201, 255, 199);  text-align:center; font-size:large; border-style:solid">Guess the surah?</p>
+		</div>
+	</div>
+{{!-- position:fixed; top:80%; right:45%; margin: 0 auto;  justify-content: center; display:flex  --}}
+
+
+
+	<script src="/public/play.js"> </script>
+</body>
+
+</html>
